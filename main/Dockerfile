@@ -16,9 +16,12 @@ RUN cd /tmp && \
 FROM tomcat:9-jre11
 
 LABEL maintainer="JGraph Ltd" \
-      org.opencontainers.image.authors="JGraph Ltd" \
+      org.opencontainers.image.authors="Nicholas Fedor" \
       org.opencontainers.image.url="https://www.drawio.com" \
-      org.opencontainers.image.source="https://github.com/jgraph/docker-drawio"
+      org.opencontainers.image.documentation="https://github.com/nicholas-fedor/drawio"\
+      org.opencontainers.image.source="https://github.com/nicholas-fedor/docker-drawio"\
+      org.opencontainers.image.description="Image of fork from https://github.com/jgraph/docker-drawio/"
+      
 
 ENV RUN_USER            tomcat
 ENV RUN_GROUP           tomcat
