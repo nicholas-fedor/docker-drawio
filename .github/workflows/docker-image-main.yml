@@ -2,10 +2,6 @@ name: Docker Image CI
 
 on:
   push:
-    branches:
-      - master
-    tags:
-      - 'v*'
     schedule:
       - cron: "05 04 * * 1"
 
